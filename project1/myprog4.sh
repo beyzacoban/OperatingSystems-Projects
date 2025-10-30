@@ -2,11 +2,13 @@
 # This script moves files based on their size (bigger or smaller than 1 MB)
 
 dir="$1"
+# Check for 1 argument
 if [ $# -ne 1 ]; then
     echo "Incorrect number of arguments!"
     echo "Usage: $0 <directory_name>"
     exit 1
 fi
+# Check if directory exists
 if [ -z "$dir" ]; then
   echo "Please give a directory name."
   exit 1

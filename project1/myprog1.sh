@@ -1,11 +1,11 @@
 #!/bin/bash
-
+# Check for 1 argument
 if [ $# -ne 1 ]; then
     echo "Incorrect number of arguments!"
     echo "Usage: $0 <filename>"
     exit 1
 fi
-
+# Check if the file exists
 if [ ! -f "$1" ];
 then
   echo "no file!"
